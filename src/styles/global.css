@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-bar {
+    @apply hidden sm:block text-gray-900 py-3;
+  }
+}
