@@ -3,6 +3,7 @@ module.exports = {
     title: "Chris Tri - Portfolio v2",
   },
   plugins: [
+    `gatsby-plugin-fontawesome-css`,
     "gatsby-plugin-mdx",
     {
       resolve: "gatsby-source-filesystem",

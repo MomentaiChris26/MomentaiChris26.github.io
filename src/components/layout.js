@@ -4,9 +4,11 @@ import Navbar from "./navbar";
 const DefaultLayout = ({ children }) => {
   return (
     <main>
-      <title>Chris Tri</title>
-      <Navbar />
-      {children}
+      <div>
+        <title>Chris Tri</title>
+        <Navbar />
+        {children}
+      </div>
     </main>
   );
 };

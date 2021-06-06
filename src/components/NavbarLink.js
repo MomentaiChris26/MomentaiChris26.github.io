@@ -4,21 +4,19 @@ import { Link } from "gatsby";
 const activePageStyle = {
   color: "white",
   backgroundColor: "#111827",
-  padding: "8px 10px",
+  padding: "2px 8px",
   borderRadius: "5px",
 };
 
 const NavbarLink = ({ page, display }) => {
   return (
-    <span className="hover:-translate-y-0.5 transform transition">
-      <Link
-        to={`/${page}`}
-        className="hover:-translate-y-0.5 transform transition"
-        activeStyle={activePageStyle}
-      >
-        {display}
-      </Link>
-    </span>
+    <Link
+      to={`/${page}`}
+      activeStyle={activePageStyle}
+      className="hover:-translate-y-0.5 transform transition mt-1 py-0.5 text-xl"
+    >
+      {display}
+    </Link>
   );
 };
 
