@@ -1,8 +1,12 @@
 import * as React from "react";
 import DefaultLayout from "../components/layout";
 
-const ResumePage = () => {
-  return <DefaultLayout>Resume</DefaultLayout>;
+const Resume = () => {
+  return (
+    <DefaultLayout>
+      <h1>Resume</h1>
+    </DefaultLayout>
+  );
 };
 
-export default ResumePage;
+export default Resume;

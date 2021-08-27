@@ -2,15 +2,16 @@ import * as React from "react";
 import DefaultLayout from "../components/layout";
 import Navbar from "../components/Navbar";
 
-const ProjectsPage = () => {
+const ResumePage = () => {
   return (
     <DefaultLayout>
-      <div className="bg-projectPage flex-grow">
+      <div className="bg-aboutPage flex-grow">
         <Navbar />
-        <h1>Projects</h1>
+        <p>About me</p>
+        <p>Work experience</p>
       </div>
     </DefaultLayout>
   );
 };
 
-export default ProjectsPage;
+export default ResumePage;

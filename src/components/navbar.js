@@ -1,46 +1,28 @@
-import * as React from "react";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import NavbarLink from "./NavbarLink";
-import NavbarIcon from "./NavbarIcon";
-
-const links = [
-  { page: "", display: "Home" },
-  { page: "resume", display: "About" },
-  { page: "projects", display: "Projects" },
-  { page: "contact", display: "Contact" },
-];
+import React, { useState } from "react";
+import { Link } from "gatsby";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div>
-      <nav className="nav-bar">
-        <div className="flex justify-between">
-          <span className="flex flex-row">
-            <span className="flex flex-row self-end space-x-6 ml-3">
-              {links.map((link) => {
-                return (
-                  <NavbarLink
-                    page={link.page}
-                    display={link.display}
-                    key={link.page}
-                  />
-                );
-              })}
-            </span>
-          </span>
-          <span className="flex flex-row self-end space-x-6 mr-3">
-            <NavbarIcon
-              url={"https://www.linkedin.com/in/christopherqtri/"}
-              icon={faLinkedin}
-            />
-            <NavbarIcon
-              url={"https://github.com/MomentaiChris26"}
-              icon={faGithub}
-            />
-          </span>
+    <nav className="px-8 bg-opacity-0">
+      <div className="max-w mx-auto ">
+        <div className="flex justify-between py-4 font-roboto-mono">
+          <Link to="/">Chris</Link>
+          <div className="hidden md:flex">
+            <Link to="/profile">Profile</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/resume">Resume</Link>
+          </div>
+          <div className="md:hidden flex items-center">
+            <button onClick={() => setMenuOpen(!menuOpen)}>Menu</button>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+      <div className={menuOpen ? null : "hidden"}>
+        <div className="block py-2 px-4 text-sm hover:bg-red-400">Hello</div>
+        <div className="block py-2 px-4 text-sm hover:bg-red-400">Hello</div>
+      </div>
+    </nav>
   );
 };
 

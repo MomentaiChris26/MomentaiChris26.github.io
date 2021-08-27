@@ -1,12 +1,10 @@
 import * as React from "react";
-import Navbar from "./navbar";
 
 const DefaultLayout = ({ children }) => {
   return (
     <main>
-      <div>
+      <div className="h-screen flex flex-col">
         <title>Chris Tri</title>
-        <Navbar />
         {children}
       </div>
     </main>
