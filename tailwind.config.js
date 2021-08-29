@@ -8,6 +8,14 @@ module.exports = {
       aboutPage: "#3066D1",
       projectPage: "#2753AB",
     }),
+    textColor: (theme) => ({
+      ...theme("colors"),
+      navText: "#B6C0D7",
+    }),
+    borderColor: (theme) => ({
+      ...theme("colors"),
+      jordyBlue: "#7EA3EE",
+    }),
     extend: {
       fontFamily: {
         "roboto-mono": ["Roboto Mono", "sans-serif"],

@@ -1,6 +1,6 @@
 import * as React from "react";
 import DefaultLayout from "../components/layout";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 const ProjectsPage = () => {
   return (
