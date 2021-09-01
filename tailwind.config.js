@@ -11,6 +11,7 @@ module.exports = {
     textColor: (theme) => ({
       ...theme("colors"),
       navText: "#B6C0D7",
+      orangeBtnText: "#EB664D",
     }),
     borderColor: (theme) => ({
       ...theme("colors"),
