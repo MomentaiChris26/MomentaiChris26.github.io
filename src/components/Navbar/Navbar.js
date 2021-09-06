@@ -11,9 +11,14 @@ const styleClasses = {
   hoverLink: "hover:bg-red-500 text-lg",
 };
 
+const bgNavBarColor = {
+  "/": "bg-homePage",
+  "/profile": "bg-aboutPage",
+  "/projects": "bg-projectPage",
+};
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const handleMediaQueryChange = (matches) => {
     if (!matches) {
       setMenuOpen(false);
@@ -27,7 +32,9 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="px-4 bg-opacity-0 text-navText">
+    <nav
+      className={`px-4 text-navText ${bgNavBarColor[window.location.pathname]}`}
+    >
       {/* function to tell the app if the view is mobile */}
       {isTabletOrMobile}
       <div className="max-w mx-auto">

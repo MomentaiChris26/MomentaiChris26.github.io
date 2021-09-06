@@ -1,7 +1,13 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "media", // or 'media' or 'class' or false
   theme: {
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
     backgroundColor: (theme) => ({
       ...theme("colors"),
       homePage: "#19346B",
@@ -11,6 +17,7 @@ module.exports = {
     textColor: (theme) => ({
       ...theme("colors"),
       navText: "#B6C0D7",
+      orangeBtnText: "#EB664D",
     }),
     borderColor: (theme) => ({
       ...theme("colors"),
