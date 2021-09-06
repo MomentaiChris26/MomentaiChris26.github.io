@@ -11,8 +11,8 @@ const IndexPage = () => {
       <div className="bg-homePage flex-grow">
         <div className="flex h-4/5">
           <div className="m-auto">
-            <div className=" p-3.5 gap-9 text-white flex flex-col items-center ">
-              <h1 className="sm:text-7xl text-5xl font-bold" id="title-name">
+            <div className=" p-3.5 gap-9 text-white flex flex-col items-center">
+              <h1 className="sm:text-7xl text-5xl font-bold" id="name-title">
                 Christopher Tri
               </h1>
               <div id="typewrite-effect" className="hidden xs:flex">
