@@ -6,4 +6,7 @@
   .nav-bar {
     @apply hidden sm:block text-gray-900 py-3;
   }
+  .about-border-rounded-shadow {
+    @apply bg-aboutPage filter drop-shadow-3xl rounded border border-black border-opacity-50;
+  }
 }

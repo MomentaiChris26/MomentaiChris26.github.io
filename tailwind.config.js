@@ -24,6 +24,9 @@ module.exports = {
       jordyBlue: "#7EA3EE",
     }),
     extend: {
+      dropShadow: {
+        "3xl": "5px 4px 1px rgba(0,0,0,0.22)",
+      },
       fontFamily: {
         "roboto-mono": ["Roboto Mono", "sans-serif"],
       },
