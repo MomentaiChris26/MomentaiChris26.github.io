@@ -7,7 +7,6 @@ const WorkHistoryDisplay = ({
   role,
   start_date,
 }) => {
-  console.log(achievements);
   return (
     <div>
       <p className="text-white font-roboto-mono text-lg">
