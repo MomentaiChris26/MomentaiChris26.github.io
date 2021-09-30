@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Settle Easy",
+    "role": "Full Stack Developer",
+    "start_date": "June 2020",
+    "end_date": "Current",
+    "achievements": ["built application using MERN"]
+  },
+  {
+    "name": "Back2Bikes",
+    "role": "Intern",
+    "start_date": "February 2020",
+    "end_date": "March 2020",
+    "achievements": ["built application using MERN"]
+  },
+  {
+    "name": "Coder Academy",
+    "role": "Student",
+    "start_date": "August 2019",
+    "end_date": "February 2020",
+    "achievements": ["built application using MERN"]
+  },
+  {
+    "name": "Flippa",
+    "role": "Assistant Accountant",
+    "start_date": "April 2019",
+    "end_date": "July 2019",
+    "achievements": ["Accounting stuff"]
+  }
+]

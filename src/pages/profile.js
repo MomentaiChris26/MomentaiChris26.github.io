@@ -1,6 +1,7 @@
 import * as React from "react";
 import DefaultLayout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
+import TimeLine from "../components/Timeline/Timeline";
 
 function MyPicture() {
   return (
@@ -65,31 +66,18 @@ const ProfilePage = () => {
           </div>
         </div>
         <div className="col-span-5 grid grid-row-3 gap-6">
-          <div className="about-border-rounded-shadow row-span-2 ">
-            Work History
-          </div>
-          <div className="about-border-rounded-shadow ">
-            Technologies I've worked with
-          </div>
-        </div>
-
-        {/* <div className="h-full grid grid-cols-1 p-4 gap-1">
-          <div className="m-auto">
-            <h1 className="text-2xl font-roboto-mono font-extrabold mb-4 text-white">
-              Info
+          <div className="about-border-rounded-shadow row-span-2 p-8">
+            <h1 className="text-3xl font-roboto-mono font-extrabold mb-4 text-white">
+              Work History
             </h1>
-            {MyPicture()}
-            <div className="text-white font-roboto-mono">
-              A paragraph introducing myself, where I’ve worked and <br />
-              things I’ve done
-            </div>
+            <TimeLine />
           </div>
-          <div className="m-auto bg-gray-500">
-            <h1 className="text-xl font-roboto-mono font-extrabold mb-4 text-white">
+          <div className="about-border-rounded-shadow p-4">
+            <h1 className="text-3xl font-roboto-mono font-extrabold mb-4 text-white">
               Technologies I've worked with
             </h1>
           </div>
-        </div> */}
+        </div>
       </div>
     </DefaultLayout>
   );
