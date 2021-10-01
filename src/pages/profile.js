@@ -2,6 +2,7 @@ import * as React from "react";
 import DefaultLayout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 import TimeLine from "../components/Timeline/Timeline";
+import TechonologiesList from "../components/TechnologiesList/TechnologiesList";
 
 function MyPicture() {
   return (
@@ -22,7 +23,7 @@ const ProfilePage = () => {
       <div className="bg-aboutPage px-16 py-6 h-full grid grid-cols-7 gap-6">
         <div className="about-border-rounded-shadow col-span-2 flex flex-col">
           <div className="mx-auto my-6">{MyPicture()}</div>
-          <div className="flex-grow mx-4">
+          <div className="flex-grow mx-6">
             <h1 className="text-3xl font-roboto-mono font-extrabold mb-4 text-white">
               About Me
             </h1>
@@ -67,15 +68,16 @@ const ProfilePage = () => {
         </div>
         <div className="col-span-5 grid grid-row-3 gap-6">
           <div className="about-border-rounded-shadow row-span-2 p-8">
-            <h1 className="text-3xl font-roboto-mono font-extrabold mb-4 text-white">
+            <h1 className="text-2xl font-roboto-mono font-extrabold mb-4 text-white">
               Work History
             </h1>
             <TimeLine />
           </div>
           <div className="about-border-rounded-shadow p-4">
-            <h1 className="text-3xl font-roboto-mono font-extrabold mb-4 text-white">
+            <h1 className="text-2xl font-roboto-mono font-extrabold mb-4 text-white">
               Technologies I've worked with
             </h1>
+            <TechonologiesList />
           </div>
         </div>
       </div>
