@@ -20,7 +20,7 @@ function MyPicture() {
 const ProfilePage = () => {
   return (
     <DefaultLayout>
-      <div className="bg-aboutPage px-16 py-6 h-full grid grid-cols-7 gap-6">
+      <div className="bg-aboutPage px-16 py-6 md:h-full grid grid-cols-7 gap-6">
         <div className="about-border-rounded-shadow col-span-2 flex flex-col">
           <div className="mx-auto my-6">{MyPicture()}</div>
           <div className="flex-grow mx-6">
@@ -67,7 +67,7 @@ const ProfilePage = () => {
           </div>
         </div>
         <div className="col-span-5 grid grid-row-3 gap-6">
-          <div className="about-border-rounded-shadow row-span-2 p-8">
+          <div className="about-border-rounded-shadow row-span-2 md:p-8 p-4">
             <h1 className="text-2xl font-roboto-mono font-extrabold mb-4 text-white">
               Work History
             </h1>

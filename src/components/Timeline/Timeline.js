@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Links from "./Links";
+import Links from "../commons/Links";
 import WorkHistoryDisplay from "./WorkHistoryDisplay";
 import companies from "../../utils/work-history";
 

@@ -7,7 +7,7 @@ const ListDisplay = ({ frameworks }) => {
         {frameworks.map((framework) => {
           return (
             <li key={framework} className="text-orangeBtnText">
-              <span className="text-white font-roboto-mono text-sm">
+              <span className="text-white font-roboto-mono lg:text-sm text-xs">
                 {framework}
               </span>
             </li>

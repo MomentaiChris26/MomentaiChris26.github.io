@@ -23,7 +23,7 @@ const TechonologiesList = () => {
       <div className="grid grid-cols-5 divide-x divide-white h-1/2">
         <Links names={names} selected={selected} handleChange={handleChange} />
 
-        <div className="pl-5 col-start-2 col-end-4">
+        <div className="pl-5 col-start-2 col-end-5">
           <ListDisplay {...selected} />
         </div>
       </div>
