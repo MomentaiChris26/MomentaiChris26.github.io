@@ -67,14 +67,14 @@ const ProfilePage = () => {
           </div>
         </div>
         <div className="col-span-5 grid grid-row-3 gap-6">
-          <div className="about-border-rounded-shadow row-span-2 md:p-8 p-4">
-            <h1 className="text-2xl font-roboto-mono font-extrabold mb-4 text-white">
+          <div className="about-border-rounded-shadow row-span-2 p-4">
+            <h1 className="text-2xl font-roboto-mono font-extrabold mb-2 text-white">
               Work History
             </h1>
             <TimeLine />
           </div>
           <div className="about-border-rounded-shadow p-4">
-            <h1 className="text-2xl font-roboto-mono font-extrabold mb-4 text-white">
+            <h1 className="text-2xl font-roboto-mono font-extrabold mb-2 text-white">
               Technologies I've worked with
             </h1>
             <TechonologiesList />

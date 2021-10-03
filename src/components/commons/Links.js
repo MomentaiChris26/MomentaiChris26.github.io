@@ -2,7 +2,7 @@ import React from "react";
 
 const Links = ({ names, handleChange, selected }) => {
   return (
-    <ul className="text-white font-roboto-mono lg:text-lg md:text-md text-sm lg:pr-5 pr-8">
+    <ul className="text-white font-roboto-mono lg:text-md text-sm lg:pr-5 pr-20">
       {names.map((name) => {
         return (
           <li className="mb-1 text-right " key={name}>
