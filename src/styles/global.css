@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  .nav-bar {
-    @apply hidden sm:block text-gray-900 py-3;
-  }
-  .about-border-rounded-shadow {
-    @apply bg-aboutPage filter drop-shadow-3xl rounded border border-black border-opacity-50;
+  @variants responsive {
+    .nav-bar {
+      @apply hidden sm:block text-gray-900 py-3;
+    }
+    .about-shadow {
+      @apply filter drop-shadow-3xl rounded border border-black border-opacity-50;
+    }
+    .mobile-about-card {
+      @apply filter-none drop-shadow-none;
+    }
   }
 }

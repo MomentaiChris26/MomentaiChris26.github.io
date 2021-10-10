@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Links from "../commons/Links";
+import Links from "../../commons/Links";
 import WorkHistoryDisplay from "./WorkHistoryDisplay";
-import companies from "../../utils/work-history";
+import companies from "../../../utils/work-history.json";
 
 const TimeLine = () => {
   const [selected, setSelect] = useState(companies[0]);
@@ -18,10 +18,16 @@ const TimeLine = () => {
 
   return (
     <>
-      <div className="grid grid-cols-5 divide-x divide-white h-3/4">
-        <Links names={names} selected={selected} handleChange={handleChange} />
+      <div className="grid sm:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-white h-3/4">
+        <div className="col-span-1 sm:col-end-2">
+          <Links
+            names={names}
+            selected={selected}
+            handleChange={handleChange}
+          />
+        </div>
 
-        <div className="pl-5 col-start-2 col-end-6">
+        <div className="pt-5 pl-1 sm:pl-5 col-span-1 sm:col-start-2 sm:col-end-6">
           <WorkHistoryDisplay {...selected} />
         </div>
       </div>

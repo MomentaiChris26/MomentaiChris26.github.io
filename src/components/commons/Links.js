@@ -2,12 +2,12 @@ import React from "react";
 
 const Links = ({ names, handleChange, selected }) => {
   return (
-    <ul className="text-white font-roboto-mono lg:text-md text-sm lg:pr-5 pr-20">
+    <ul className="text-white font-roboto-mono flex justify-around  sm:flex-col overflow-x-scroll lg:text-md text-sm md:pr-5 w-full">
       {names.map((name) => {
         return (
-          <li className="mb-1 text-right " key={name}>
+          <li className="mb-1 mx-1 text-right" key={name}>
             <button
-              className={`mb-1 text-right cursor-pointer hover:text-red-200 ${
+              className={`mb-1 text-center sm:text-right cursor-pointer hover:text-red-200 ${
                 selected.name === name && "font-black"
               }`}
               onClick={() => handleChange(name)}
