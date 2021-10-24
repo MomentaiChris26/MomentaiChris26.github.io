@@ -70,13 +70,13 @@ const ProfilePage = () => {
         </ProfileCard>
         <div className="col-span-2 sm:col-span-5 grid gap-6">
           <ProfileCard addClass="row-span-2 p-4">
-            <h1 className="text-lg sm:text-2xl text-center sm:text-left font-roboto-mono font-extrabold mb-2 text-white">
+            <h1 className="text-lg sm:text-2xl text-center sm:text-left font-roboto-mono font-extrabold mb-4 text-white">
               Work History
             </h1>
             <TimeLine />
           </ProfileCard>
           <ProfileCard addClass="p-4">
-            <h1 className="text-lg sm:text-2xl text-center sm:text-left font-roboto-mono font-extrabold mb-2 text-white">
+            <h1 className="text-lg sm:text-2xl text-center sm:text-left font-roboto-mono font-extrabold mb-4 text-white">
               Technologies I've worked with
             </h1>
             <TechonologiesList />

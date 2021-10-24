@@ -7,14 +7,12 @@ const TechonologiesList = () => {
   const [selected, setSelect] = useState(technologies[0]);
 
   const handleChange = (value) => {
-    const data = technologies.find(
-      (technology) => technology.language === value
-    );
+    const data = technologies.find((technology) => technology.name === value);
     setSelect(data);
   };
 
   const names = technologies.reduce((acc, current) => {
-    acc.push(current.language);
+    acc.push(current.name);
     return acc;
   }, []);
 
@@ -29,7 +27,7 @@ const TechonologiesList = () => {
           />
         </div>
 
-        <div className="pt-5 pl-1 sm:pl-5 col-span-1 sm:col-start-2 sm:col-end-5">
+        <div className="pl-1 sm:pl-5 col-span-1 sm:col-start-2 sm:col-end-5">
           <ListDisplay {...selected} />
         </div>
       </div>

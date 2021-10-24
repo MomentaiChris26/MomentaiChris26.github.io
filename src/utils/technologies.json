@@ -1,14 +1,14 @@
 [
   {
-    "language": "JavaScript",
+    "name": "JavaScript",
     "frameworks": ["Chai", "Cypress", "Meteor JS", "React JS", "Vue JS"]
   },
   {
-    "language": "Ruby",
+    "name": "Ruby",
     "frameworks": ["Ruby on Rails"]
   },
   {
-    "language": "Other",
+    "name": "Other",
     "frameworks": ["AWS", "MongoDB", "PostgresSQL"]
   }
 ]
