@@ -37,7 +37,7 @@ const IndexPage = () => {
               <button
                 id="projects-button"
                 className="text-orangeBtnText font-bold text-lg p-4 border border-white hover:bg-gray-500 focus:outline-none"
-                onClick={() => navigate("/projects")}
+                onClick={() => navigate("/profile")}
               >
                 Learn more about me
               </button>

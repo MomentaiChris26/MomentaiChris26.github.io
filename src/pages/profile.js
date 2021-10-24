@@ -50,17 +50,18 @@ const ProfilePage = () => {
               <h3 className="text-lg text-white font-roboto-mono font-bold mb-1">
                 Contact me
               </h3>
-              <ul className="text-sm text-white font-roboto-mono text-justify ">
-                <li>Email: christophertri90@gmail.com</li>
-                <li>
-                  GitHub: &nbsp;
+              <ul className="text-sm text-white font-roboto-mono underline">
+                <li className="mb-1">
+                  <a href="mailto:christophertri90@gmail.com">Email me</a>
+                </li>
+                <li className="mb-1">
                   <a href="https://github.com/MomentaiChris26">
-                    MomentaiChris26
+                    Check out my GitHub
                   </a>
                 </li>
-                <li>
+                <li className="mb-1">
                   <a href="https://www.linkedin.com/in/christopherqtri/">
-                    LinkedIn
+                    Connect with me on LinkedIn
                   </a>
                 </li>
               </ul>
