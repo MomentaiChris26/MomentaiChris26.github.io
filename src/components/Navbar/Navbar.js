@@ -27,7 +27,7 @@ const Navbar = ({ path }) => {
   };
 
   useMemo(() => {
-    let regex = path.match(/\w+/gi);
+    let regex = path?.match(/\w+/gi);
     if (regex?.length > 0) {
       setUrlPath(regex[0]);
     } else {
