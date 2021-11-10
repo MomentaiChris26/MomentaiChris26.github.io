@@ -18,9 +18,9 @@ function MyPicture() {
   );
 }
 
-const ProfilePage = () => {
+const ProfilePage = ({ location }) => {
   return (
-    <DefaultLayout>
+    <DefaultLayout path={location.pathname}>
       <div className="bg-aboutPage px-0 sm:px-16 py-6 md:h-full grid grid-col-2 sm:grid-cols-7 gap-6">
         <ProfileCard addClass="col-span-2 flex flex-col">
           <div className="mx-auto my-6">{MyPicture()}</div>

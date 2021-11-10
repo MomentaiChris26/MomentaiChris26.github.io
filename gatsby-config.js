@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Chris Tri - Portfolio v2",
+    siteURL: "https://momentaichris26.github.io",
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,

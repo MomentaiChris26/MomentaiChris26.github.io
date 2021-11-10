@@ -1,9 +1,9 @@
 import * as React from "react";
 import DefaultLayout from "../components/layout";
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ location }) => {
   return (
-    <DefaultLayout>
+    <DefaultLayout path={location.pathname}>
       <div className="bg-projectPage flex-grow">
         <div className="flex h-4/5 items-center flex-col my-2">
           <h1 className="my-10 text-3xl text-white">Projects</h1>

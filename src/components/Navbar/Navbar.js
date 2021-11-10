@@ -17,7 +17,7 @@ const bgNavBarColor = {
   "/projects": "bg-projectPage",
 };
 
-const Navbar = () => {
+const Navbar = ({ path }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleMediaQueryChange = (matches) => {
     if (!matches) {
@@ -32,9 +32,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav
-      className={`px-4 text-navText ${bgNavBarColor[window.location.pathname]}`}
-    >
+    <nav className={`px-4 text-navText ${bgNavBarColor[path]}`}>
       {/* function to tell the app if the view is mobile */}
       {isTabletOrMobile}
       <div className="max-w mx-auto">

@@ -5,9 +5,9 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Typewriter from "typewriter-effect";
 import { IconButton } from "../components/Homepage/IconButton";
 
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
   return (
-    <DefaultLayout>
+    <DefaultLayout path={location.pathname}>
       <div className="bg-homePage flex-grow">
         <div className="flex h-4/5">
           <div className="m-auto">
