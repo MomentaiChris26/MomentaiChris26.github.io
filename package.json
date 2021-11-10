@@ -14,7 +14,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d docs"
+    "deploy": "gatsby build && gh-pages -d docs -b gh-pages"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",
