@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Link } from "gatsby";
 import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,17 +13,27 @@ const styleClasses = {
 
 const bgNavBarColor = {
   "/": "bg-homePage",
-  "/profile": "bg-aboutPage",
-  "/projects": "bg-projectPage",
+  profile: "bg-aboutPage",
+  projects: "bg-projectPage",
 };
 
 const Navbar = ({ path }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [urlPath, setUrlPath] = useState("");
   const handleMediaQueryChange = (matches) => {
     if (!matches) {
       setMenuOpen(false);
     }
   };
+
+  useMemo(() => {
+    let regex = path.match(/\w+/gi);
+    if (regex?.length > 0) {
+      setUrlPath(regex[0]);
+    } else {
+      setUrlPath("/");
+    }
+  }, [path]);
 
   const isTabletOrMobile = useMediaQuery(
     { maxWidth: 768 },
@@ -32,7 +42,7 @@ const Navbar = ({ path }) => {
   );
 
   return (
-    <nav className={`px-4 text-navText ${bgNavBarColor[path]}`}>
+    <nav className={`px-4 text-navText ${bgNavBarColor[urlPath]}`}>
       {/* function to tell the app if the view is mobile */}
       {isTabletOrMobile}
       <div className="max-w mx-auto">

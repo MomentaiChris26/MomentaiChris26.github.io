@@ -19,6 +19,7 @@ function MyPicture() {
 }
 
 const ProfilePage = ({ location }) => {
+  console.log(location);
   return (
     <DefaultLayout path={location.pathname}>
       <div className="bg-aboutPage px-0 sm:px-16 py-6 md:h-full grid grid-col-2 sm:grid-cols-7 gap-6">
